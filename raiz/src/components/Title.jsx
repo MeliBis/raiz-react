@@ -4,7 +4,7 @@ const Title = ({ titulo, saludo }) => {
   return (
     <>
       <header>
-        <h1>Estas en la pagina {titulo}</h1>
+        <h1>Bienvenido a I code you {titulo}</h1>
         <h2>{saludo}</h2>
       </header>
     </>

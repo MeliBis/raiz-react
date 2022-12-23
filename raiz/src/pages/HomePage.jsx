@@ -11,7 +11,7 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      <Title titulo="principal" saludo="Hola como estan?" />
+      <Title titulo="principal" saludo="Hola mundo!" />
       <main>
         <article>
           <button type="button" className="btn btn-primary" onClick={saludar}>
