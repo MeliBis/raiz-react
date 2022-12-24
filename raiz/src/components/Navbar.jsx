@@ -6,29 +6,37 @@ const NavBar = () => {
 
 <div>
   
- <nav className="navbar navbar-expand-lg navbar-light bg-light">
-  <div className="container-fluid">
-    <NavLink className="navbar-brand" to="*">Navbar</NavLink>
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon" />
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item">
-          <NavLink className="nav-link active" aria-current="page" to="/about">About</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" href="#">Features</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link" href="#">Pricing</NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink className="nav-link disabled">Disabled</NavLink>
-        </li>
-      </ul>
-    </div>
+ <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+<div className="container-fluid">
+  <NavLink className="navbar-brand" to="/">MeliB</NavLink>
+  <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon" />
+  </button>
+  <div className="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul className="navbar-nav">
+      <li className="nav-item">
+        <NavLink className="nav-link active" aria-current="page" to="/about">Acerca de</NavLink>
+      </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="#">Blog</NavLink>
+      </li>
+      <li className="nav-item dropdown">
+        <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Proyectos
+        </NavLink>
+        <ul className="dropdown-menu">
+          <li><NavLink className="dropdown-item" to="#">Action</NavLink></li>
+          <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
+          <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
+        </ul>
+      </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="#">Iniciar sesión</NavLink>
+      </li>
+    </ul>
   </div>
+</div>
+
 </nav>
 
 
