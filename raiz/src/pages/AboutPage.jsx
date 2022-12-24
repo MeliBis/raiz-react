@@ -7,7 +7,7 @@ const AboutPage = () => {
   return (
     <>
       <Navbar />
-      <Title />
+      <h2>acerca de</h2>
       <Footer/>
     </>
   );

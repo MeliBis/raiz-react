@@ -8,6 +8,9 @@ import {
 
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
+import FormularioPage from "../pages/FormularioPage";
+import ProyectosPage from "../pages/ProyectosPage";
+import BlogPage from "../pages/BlogPage";
 
 const AppRouter = () => {
   return (
@@ -15,6 +18,9 @@ const AppRouter = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="/formulario" element={<FormularioPage />} />
+        <Route path="/proyectos" element={<ProyectosPage />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>

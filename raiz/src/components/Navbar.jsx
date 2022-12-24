@@ -18,10 +18,13 @@ const NavBar = () => {
         <NavLink className="nav-link active" aria-current="page" to="/about">Acerca de</NavLink>
       </li>
       <li className="nav-item">
-        <NavLink className="nav-link" to="#">Blog</NavLink>
+        <NavLink className="nav-link active" aria-current="page" to="/formulario">Formulario</NavLink>
+      </li>
+      <li className="nav-item">
+        <NavLink className="nav-link" to="/blog">Blog</NavLink>
       </li>
       <li className="nav-item dropdown">
-        <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <NavLink className="nav-link dropdown-toggle" to="/proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
          Proyectos
         </NavLink>
         <ul className="dropdown-menu">
