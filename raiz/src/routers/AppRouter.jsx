@@ -11,6 +11,7 @@ import AboutPage from "../pages/AboutPage";
 import FormularioPage from "../pages/FormularioPage";
 import ProyectosPage from "../pages/ProyectosPage";
 import BlogPage from "../pages/BlogPage";
+import ListaTareasPage from "../pages/ListaTareasPage";
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,9 @@ const AppRouter = () => {
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/formulario" element={<FormularioPage />} />
         <Route path="/proyectos" element={<ProyectosPage />} />
+        <Route path="/listaTareas" element={<ListaTareasPage />} />
+
+
 
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
