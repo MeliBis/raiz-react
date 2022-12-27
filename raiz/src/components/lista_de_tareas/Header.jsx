@@ -5,7 +5,7 @@ import { faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 
 const Header = () => {
   return (
-    <div className="contenedor">
+    <div className="">
 
     <div className='header'>
         <div className="header__titulo">

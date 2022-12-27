@@ -5,8 +5,7 @@ import Navbar from "../components/Navbar";
 const FormularioPage = () => {
   return (
     <>
- <Navbar/>
- <Footer/>
+
      </>
   )
 }
