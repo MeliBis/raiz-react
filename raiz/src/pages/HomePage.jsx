@@ -20,9 +20,9 @@ const HomePage = () => {
           </button>
         </article>
       </main> */}
-      <MainHome />
-{/*       <Footer />
- */}    </>
+       <MainHome /> 
+ 
+     </>
   );
 };
 

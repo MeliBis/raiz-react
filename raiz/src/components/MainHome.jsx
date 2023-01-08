@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-
+import Footer from "./Footer";
 const mainHome = () => {
   return (
     <div>
@@ -202,6 +202,8 @@ Html | Css | Bootstrap | React
         </div>
         {/* /.container */}
         {/* FOOTER */}
+      </main>
+    
         <footer className="container">
           <p className="float-end">
             <a href="#">Back to top</a>
@@ -211,8 +213,10 @@ Html | Css | Bootstrap | React
             <a href="#">Terms</a>
           </p>
         </footer>
-      </main>
+     
+         
     </div>
+   
   );
 };
 

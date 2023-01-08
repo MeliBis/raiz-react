@@ -25,12 +25,12 @@ const NavBar = () => {
       </li>
       <li className="nav-item dropdown">
         <NavLink className="nav-link dropdown-toggle" to="/proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-         Proyectos
+         FreeCodeCamp
         </NavLink>
         <ul className="dropdown-menu">
-          <li><NavLink className="dropdown-item" to="#">Action</NavLink></li>
-          <li><NavLink className="dropdown-item" to="#">Another action</NavLink></li>
-          <li><NavLink className="dropdown-item" to="#">Something else here</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/testimonios">Testimonios</NavLink></li>
+          <li><NavLink className="dropdown-item" to="#">Segundo Proyecto action</NavLink></li>
+          <li><NavLink className="dropdown-item" to="#">Tercer proyecto</NavLink></li>
         </ul>
       </li>
       <li className="nav-item">
