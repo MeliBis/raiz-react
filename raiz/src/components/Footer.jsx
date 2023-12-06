@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="row pb-2 p-5 bg-dark text-white">
 
         <div className="col-xs.12 col-md-6 col-lg-3">
-          <p className="h3"> Melib´s code</p>
+          <p className="h3"> meliscript</p>
           <p className="text-secondary">Puebla,México</p>
         </div>
         <div className="col-xs.12 col-md-6 col-lg-3">

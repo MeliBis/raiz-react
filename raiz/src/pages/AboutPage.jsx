@@ -6,7 +6,7 @@ import Title from "../components/Title";
 const AboutPage = () => {
   return (
     <>
-      <Navbar />
+   
       <h2>acerca de</h2>
       <Footer/>
     </>

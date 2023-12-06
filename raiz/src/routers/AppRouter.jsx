@@ -13,10 +13,12 @@ import ProyectosPage from "../pages/ProyectosPage";
 import BlogPage from "../pages/BlogPage";
 import ListaTareasPage from "../pages/ListaTareasPage";
 import TestimoniosPage from "../pages/TestimoniosPage";
+import NavBar from "../components/Navbar";
 
 const AppRouter = () => {
   return (
     <Router>
+      <NavBar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />

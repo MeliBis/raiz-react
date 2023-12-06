@@ -1,19 +1,23 @@
 import React from 'react'
+import '../styles.css/testimonio.css'
 
-const Testimonios = () => {
+const Testimonios = (props) => {
   return (
     <>
+        <h1>Lo que programadores piensan de nosotros</h1>
         <div className=" contenedor-testimonio">
             <div>
               <img 
-                src={require("../assets/testimonio-imgs/photo_2022-10-31_13-08-11.jpg")} 
+                src={require(`../assets/testimonio-imgs/testimonio-${props.imagen}.png`)} 
                 alt="testimonio Melissa" 
-                className='imagen-testimonio' />
+                className='imagen-testimonio' title={props.nombre} />
             </div>
            <div className="contenedor-texto-testimonio">
-            <p className='nombre-testimonio'>Melissa Barrios en México</p>
-            <p className='cargo-testimonio'>Administradora en Kamtali - Programadora Full Stack - Community Manager</p>
-            <p className="contenedor-texto-testimonio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ut eligendi debitis consequuntur. Modi voluptate molestias non inventore accusamus? Minima in illum porro dolore error.</p>
+            <p className='nombre-testimonio'>
+              <strong>{props.nombre}</strong> en {props.pais}</p>
+            <p className='cargo-testimonio'>
+              {props.cargo} en <strong>{props.empresa} </strong></p>
+            <p className=" contenedor-texto-testimonio">"{props.testimonio}"</p>
           </div>
         </div>
     </>

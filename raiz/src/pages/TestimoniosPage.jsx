@@ -1,18 +1,26 @@
 import React from 'react'
-import NavBar from '../components/Navbar'
 import Testimonios from '../components/Testimonios'
-import '../styles.css/testimonio.css'
 
 const TestimoniosPage = () => {
   return (
     <>
-    <NavBar/>
-    <div className="app">
-      <div className='contenedor-principal'>
-        <h1>Esto es lo que programadores dicen de nosotros</h1>
-        <Testimonios/>
-      </div>
-    </div>
+        <Testimonios 
+        nombre='Melissa Barrios'
+        pais='Mexico'
+        imagen='meli'
+        cargo='ful Stack developer'
+        empresa= 'kamtali'
+        testimonio= 'le gusta aprender nuevos temas en meliscript'
+        />
+        <Testimonios 
+        nombre='Meli Barrios'
+        pais='Mexico'
+        imagen='meliverde'
+        cargo='ful Stack developer'
+        empresa= 'kamtali'
+        testimonio= 'le gusta aprender nuevos temas en meliscript'
+        />
+     
    
     </>
   )
