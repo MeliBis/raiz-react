@@ -29,7 +29,7 @@ const NavBar = () => {
         </NavLink>
         <ul className="dropdown-menu">
           <li><NavLink className="dropdown-item" to="/testimonios">Testimonios</NavLink></li>
-          <li><NavLink className="dropdown-item" to="#">Segundo Proyecto action</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/contador">Contador de clicks</NavLink></li>
           <li><NavLink className="dropdown-item" to="#">Tercer proyecto</NavLink></li>
         </ul>
       </li>
