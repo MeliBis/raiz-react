@@ -1,53 +1,44 @@
 import React, {useState} from 'react'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSquarePlus} from '@fortawesome/free-solid-svg-icons'
+import '../../styles.css/TareaFormulario.css'
+import { v4 as uuidv4} from 'uuid'
 
+const FormularioTareas = (props) => {
 
-const FormularioTareas = ({tareas, cambiarTareas}) => {
-  
-  const [inputTarea, cambiarInputTarea] = useState('')
+  const [input, setInput] = useState('')
 
-  const handleInput = (e) => {
-    cambiarInputTarea(e.target.value)
+  const manejarCambio= e =>{
+    setInput(e.target.value)
+    
   }
 
- const handleSubmit = (e) => {
-  e.preventDefault();
-  cambiarTareas(
-    [
-      ...tareas,
-      {
-        id:3,
-        texto: 'Nueva tarea',
-        completada: false
-      }
-    ]
-  );
- }
+  const manejarEnvio = e =>{
+    e.preventDefault()
+    
+    const tareaNueva= {
+      id: uuidv4(),
+      texto: input,
+      completado:false
+    }
+    props.onSubmit(tareaNueva)
+  }
+
   return (
-    
-    <form action="" className='formulario-tareas'>
-      <input 
-      type="text" 
-      className='formulario-tareas__input' 
-      placeholder='escribe una tarea'
-      value={inputTarea}
-      onChange={(e) => handleInput(e)}
-       />
-       <button 
-       type='submit'
-       className='formulario-tareas__btn'
-       >
-          <FontAwesomeIcon 
-          icon={faSquarePlus} 
-          className='formulario-tareas__icono-btn'/>
-          
-       </button>
-    </form>
+    <form 
+          className='tarea-formulario'
+          onSubmit={manejarEnvio}
+          >
+      <input type="text" 
+        className='tarea-input'
+        placeholder='Escribe una tarea'
+        name='texto'
+        onChange={manejarCambio}
       
-    
+      />
+      <button className='tarea-boton'>
+        Agregar Tarea
+        </button>
+    </form>
   )
 }
-
 
 export default FormularioTareas

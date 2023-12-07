@@ -31,7 +31,7 @@ const NavBar = () => {
           <li><NavLink className="dropdown-item" to="/testimonios">Testimonios</NavLink></li>
           <li><NavLink className="dropdown-item" to="/contador">Contador de clicks</NavLink></li>
           <li><NavLink className="dropdown-item" to="/calculadora">Calculadora</NavLink></li>
-          <li><NavLink className="dropdown-item" to="#">Lista de tareas</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/lista">Lista de tareas</NavLink></li>
         </ul>
       </li>
       <li className="nav-item">

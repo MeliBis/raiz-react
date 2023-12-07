@@ -16,6 +16,7 @@ import TestimoniosPage from "../pages/TestimoniosPage";
 import NavBar from "../components/Navbar";
 import ContadorPages from "../pages/ContadorPages";
 import CalculadoraPage from "../pages/CalculadoraPage";
+import Footer from "../components/Footer";
 
 const AppRouter = () => {
   return (
@@ -31,11 +32,10 @@ const AppRouter = () => {
         <Route path="/testimonios" element={<TestimoniosPage />} />
         <Route path="/contador" element={<ContadorPages />} />
         <Route path="/calculadora" element={<CalculadoraPage />} />
-
-
-
+        <Route path="/lista" element={<ListaTareasPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      
     </Router>
   );
 };

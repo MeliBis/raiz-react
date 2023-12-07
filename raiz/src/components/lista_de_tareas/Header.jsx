@@ -1,5 +1,4 @@
 import React from 'react'
-import '../../styles.css/App.css'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faEyeSlash} from '@fortawesome/free-solid-svg-icons'
 
