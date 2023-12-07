@@ -15,6 +15,7 @@ import ListaTareasPage from "../pages/ListaTareasPage";
 import TestimoniosPage from "../pages/TestimoniosPage";
 import NavBar from "../components/Navbar";
 import ContadorPages from "../pages/ContadorPages";
+import CalculadoraPage from "../pages/CalculadoraPage";
 
 const AppRouter = () => {
   return (
@@ -29,6 +30,7 @@ const AppRouter = () => {
         <Route path="/listaTareas" element={<ListaTareasPage />} />
         <Route path="/testimonios" element={<TestimoniosPage />} />
         <Route path="/contador" element={<ContadorPages />} />
+        <Route path="/calculadora" element={<CalculadoraPage />} />
 
 
 

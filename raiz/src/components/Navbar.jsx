@@ -24,13 +24,14 @@ const NavBar = () => {
         <NavLink className="nav-link" to="/blog">Blog</NavLink>
       </li>
       <li className="nav-item dropdown">
-        <NavLink className="nav-link dropdown-toggle" to="/proyectos" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-         FreeCodeCamp
+        <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Camp
         </NavLink>
         <ul className="dropdown-menu">
           <li><NavLink className="dropdown-item" to="/testimonios">Testimonios</NavLink></li>
           <li><NavLink className="dropdown-item" to="/contador">Contador de clicks</NavLink></li>
-          <li><NavLink className="dropdown-item" to="#">Tercer proyecto</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/calculadora">Calculadora</NavLink></li>
+          <li><NavLink className="dropdown-item" to="#">Lista de tareas</NavLink></li>
         </ul>
       </li>
       <li className="nav-item">
