@@ -35,7 +35,7 @@ const AppRouter = () => {
         <Route path="/lista" element={<ListaTareasPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-      
+     
     </Router>
   );
 };

@@ -34,6 +34,17 @@ const NavBar = () => {
           <li><NavLink className="dropdown-item" to="/lista">Lista de tareas</NavLink></li>
         </ul>
       </li>
+      <li className="nav-item dropdown">
+        <NavLink className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+         Arturo
+        </NavLink>
+        <ul className="dropdown-menu">
+          <li><NavLink className="dropdown-item" to="/">1</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/">2</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/">3</NavLink></li>
+          <li><NavLink className="dropdown-item" to="/">4  </NavLink></li>
+        </ul>
+      </li>
       <li className="nav-item">
         <NavLink className="nav-link" to="#">Iniciar sesión</NavLink>
       </li>
